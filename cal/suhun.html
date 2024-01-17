@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 계산기</title>
+</head>
+<body>
+    <h2>간단한 계산기</h2>
+    
+    <input type="text" id="expression" placeholder="계산할 수식을 입력하세요">
+    <button onclick="calculate()">계산</button>
+    <p id="result">결과: </p>
+
+    <script>
+        function calculate() {
+            // 사용자 입력 가져오기
+            const expression = document.getElementById('expression').value;
+
+            try {
+                // eval() 함수를 사용하여 수식 계산
+                const result = eval(expression);
+
+                // 결과를 화면에 출력
+                document.getElementById('result').innerText = '결과: ' + result;
+            } catch (error) {
+                // 오류가 발생하면 화면에 오류 메시지 출력
+                document.getElementById('result').innerText = '오류: 잘못된 수식입니다.';
+            }
+        }
+    </script>
+</body>
+</html>

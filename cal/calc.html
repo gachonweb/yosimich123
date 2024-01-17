@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .history {
+            flex: 1;
+            background-color: #f0f0f0; /* 좌측 영역의 배경색을 지정할 수 있습니다. */
+            text-indent: 15px;
+        }
+        p{
+            text-indent: 30px;
+            font-weight: bold;
+        }
+        .calc {
+            text-align: center;
+            flex: 3;
+            background-color: #e0e0e0; /* 우측 영역의 배경색을 지정할 수 있습니다. */
+        }
+        table{
+            margin : auto;
+            width: 70%;
+            height: 60vh;
+            table-layout: fixed;
+        }
+        tr{
+            height: 10%;
+        }
+        button{
+            width: 90%;
+            height: 90%;
+        }
+        .btn{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="history">
+            <h1>HISTORY</h1>
+            
+        </div>
+        <div class="calc">
+            <h1>CALCULATOR</h1>
+            <table border="1" >
+                <tr><th colspan='4' id="result"></th></tr>
+                <tr>
+                    <td><button class='btn' name="%">%</button></td>
+                    <td><button class='btn' name="C">C</button></td>
+                    <td><button class='btn' name="-">-</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><button class='btn' name="7">7</button></td>
+                    <td><button class='btn' name="8">8</button></td>
+                    <td><button class='btn' name="9">9</button></td>
+                    <td><button class='btn' name="÷">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" name="4">4</button></td>
+                    <td><button class="btn" name="5">5</button></td>
+                    <td><button class="btn" name="6">6</button></td>
+                    <td><button class="btn" name="X">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" name="1">1</button></td>
+                    <td><button class="btn" name="2">2</button></td>
+                    <td><button class="btn" name="3">3</button></td>
+                    <td><button class="btn" name="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" name="±">±</button></td>
+                    <td><button class="btn" name="0">0</button></td>
+                    <td><button class="btn" name=".">.</button></td>
+                    <td><button class="btn" name="=">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+
+</body>
+</html>

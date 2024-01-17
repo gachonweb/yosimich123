@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보</title>
+    <style>
+        .rsp{
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-top: 10px;
+        }
+        img{
+            border: 5px solid black;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+        section{
+            text-align: center;
+        }
+        h1{
+            font-size: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        #first{
+            background-color: gray;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>    
+        <h1>Rock-Scissors-Paper Game!!</h1>
+    </header>
+    <section id="first">
+        <div class="rsp">
+            <img id="rock" src="./rock.png">
+            <img id="scissors" src="./scissros.jpeg">
+            <img id="paper" src="./paper.png"> 
+        </div>
+    </section>
+    <section>
+        <h2>Your Choice?</h2>
+        <button name="rock">Rock</button>
+        <button name="scissors">Scissors</button>
+        <button name="paper">Paper</button>
+        <h2 id="result"></h2>
+    </section>
+    <script src="./rsp.js"></script>
+</body>
+</html>
